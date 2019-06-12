@@ -98,7 +98,7 @@ namespace _06_Repository_Pattern_Console
                 "9. WildWest");
             int genreNumber = int.Parse(Console.ReadLine());
             content.TypeOfGenre = (GenreType)genreNumber; //called casting
-            //StreamingContent updatedContent = _streamingRepo.UpdateContentInList(userInput, content);
+            _streamingRepo.UpdateContentInList(userInput, content);
             //Console.WriteLine($"\n{updatedContent.Title} - {updatedContent.Description}\n" +
             //    $"{updatedContent.StarRating} Stars\n" +
               //  $"Run time: {updatedContent.RunTimeInMinutes} minutes\n" +
