@@ -15,7 +15,7 @@ namespace _05_Classes
         public int SugarAmount { get; set; }
         public int CookieBatchSize { get; set; }
         public bool Gooey { get; set; }
-
+        
         public Cookie()
         {
             //2 with same name but diff params is called overloading

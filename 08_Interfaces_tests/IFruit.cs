@@ -26,6 +26,8 @@ namespace _08_Interfaces_tests
             IsPeeled = true;
             return "Peeling in process";
         }
+        //classes implementing interfaces must have all properties/methods from interface, but can have more of their own
+        public int MyProperty { get; set; }
     }
     public class Kiwi : IFruit
     {

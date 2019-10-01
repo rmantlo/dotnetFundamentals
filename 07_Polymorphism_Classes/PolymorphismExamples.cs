@@ -9,7 +9,7 @@ namespace _07_Polymorphism_Classes
     //get polymorphism through inheritance
 
     //renaming class! ahh (will have multiple classes)
-    public class Animal
+    public abstract class Animal
     {
         public int EyeCount { get; set; }
         public int LegCount { get; set; }
@@ -33,7 +33,7 @@ namespace _07_Polymorphism_Classes
         {
             Console.WriteLine("Sloth Constructor");
         }
-        public Sloth(int eyeCount, int legCount, double weightInPounds, bool hasTail, bool hasFur) : base(eyeCount,legCount,weightInPounds,hasTail,hasFur)
+        public Sloth(int eyeCount, int legCount, double weightInPounds, bool hasTail, bool hasFur) : base(eyeCount, legCount, weightInPounds, hasTail, hasFur)
         {
             Console.WriteLine("Sloth Constructor");
         }
@@ -60,6 +60,7 @@ namespace _07_Polymorphism_Classes
         public Cat(int eyeCount, int legCount, double weightInPounds, bool hasTail, bool hasFur, double clawLength) : base(eyeCount, legCount, weightInPounds, hasTail, hasFur)
         {
             ClawLengthInInches = clawLength;
+            EyeCount = eyeCount;
         }
         public double ClawLengthInInches { get; set; }
         //virtual says this method isnt set in stone, virtual properties and methods can be overridden
@@ -91,5 +92,15 @@ namespace _07_Polymorphism_Classes
             Console.WriteLine("Purrr");
         }
     }
-    
+    public class somthingelse
+    {
+
+        public void something()
+        {
+            Cat cat = new Cat();
+            cat.EyeCount = 2;
+            cat.ClawLengthInInches = 7;
+        }
+    }
+
 }

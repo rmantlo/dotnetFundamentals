@@ -21,7 +21,7 @@ namespace _06_Repository_Pattern
         public bool IsFamilyFriendly { get; set; }
 
         //ctor + tab tab auto create constructor
-        public StreamingContent() { }
+        public StreamingContent()  { }
         public StreamingContent(string title, GenreType typeOfGenre, string description, double runTimeInMinutes, double starRating, string maturityRating, bool isFamilyFriendly)
         {
             Title = title;

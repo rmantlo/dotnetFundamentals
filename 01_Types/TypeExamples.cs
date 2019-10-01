@@ -31,10 +31,8 @@ namespace _01_Types
 
             //decimal types, need suffixes at end
             float floatExample = 1.024312f; //need f at end, decimal type, single precision floating-point number, round to 7 digits
-            double doubleExmaple = 3.22432342342342342334; //does need suffix, it is default decimal type, or can have d at end, single precision floating-point number, can be very long, rounds after 15 digits
+            double doubleExmaple = 3.22432342342342342334; //does not need suffix, it is default decimal type, or can have d at end, single precision floating-point number, can be very long, rounds after 15 digits
             decimal decimalExmaple = 1.23352345234m; //needs m at end, m has to meaning, for extreme precision, longest of all decimal types
-
-
 
         }
 
@@ -73,7 +71,7 @@ namespace _01_Types
             Console.WriteLine(compositeFullName);
 
             //other reference types - objects
-            DateTime today = DateTime.Today; //stores both a date and a time, multiple type, ie today/now/tomorrow, days in month etc,
+            DateTime today = DateTime.Today; //stores both a date and a time, multiple type, ie today/now/tomorrow, days in month etc, these are structs not actually references
             DateTime someDay = new DateTime(1978, 1, 1); //creates new datetime value;
             TimeSpan timeSpanExample = today - someDay; //math
             Console.WriteLine(someDay);

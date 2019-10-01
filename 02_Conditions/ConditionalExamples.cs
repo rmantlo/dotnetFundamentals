@@ -71,7 +71,6 @@ namespace _02_Conditions
                 default:
                     Console.WriteLine("nothing significant for your age, and highly likely to be in debt");
                     break;
-
             }
         }
 
