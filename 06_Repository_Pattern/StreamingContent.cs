@@ -13,7 +13,7 @@ namespace _06_Repository_Pattern
     public class StreamingContent
     {
         public string Title { get; set; }
-        public GenreType TypeOfGenre { get; set; }
+        public GenreType TypeOfGenre  { get; set; }
         public string Description { get; set; }
         public double RunTimeInMinutes { get; set; }
         public double StarRating { get; set; }
